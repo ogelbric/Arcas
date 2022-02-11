@@ -1,4 +1,4 @@
-# Project Arcas /"Service Installer for VMware Tanzu"
+# Service Installer for VMware Tanzu (Project Arcas)
 This write up focuses at a TKGs install with AVI (NSX advanced loadbalancer)
 
 ## My vCenter set up (3 ESXi hosts with vSAN)
