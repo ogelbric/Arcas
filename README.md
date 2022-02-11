@@ -39,5 +39,46 @@ Power on once deployed
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas9.png)
 
+## Here are the network settings for a 3 network setup
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas11.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas12.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas13.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas14.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas15.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas16.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas17.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas18.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas19.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas20.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas21.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas22.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas23.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas24.png)
+
+### Please wait for about ~10-20 min for the WCp enablement to take place
+The error can be ignored!
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas25.png)
+
+
+
+
+
+
+
+
 
 
