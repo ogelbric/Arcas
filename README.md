@@ -97,6 +97,12 @@ The error can be ignored!
 
 ## Outcome loggin onto supervisor cluster
 
+```
+/usr/local/bin/kubectl-vsphere login --vsphere-username administrator@vsphere.local --server=https://192.168.4.71 --insecure-skip-tls-verify
+kubectl config use-context 192.168.4.71
+kubectl get nodes
+```
+
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas28.png)
 
 ## Deploying a namespace (a user needs to be added in the vCenter GUI!) 
