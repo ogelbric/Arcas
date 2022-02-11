@@ -6,11 +6,11 @@ This write up focuses at a TKGs install with AVI (NSX advanced loadbalancer)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas1.png)
 
 
-## Download the OVA for the service installer
+## Download the Service Installer OVA
 
 need URL here... 
 
-## Deploy the OVA for the service installer
+## Deploy the Service Installer OVA 
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas2.png)
 
@@ -20,9 +20,16 @@ need URL here...
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas5.png)
 
+Power on once deployed
+  
 ## DNS set up
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas6.png)
 
+## Setup the AVI OVA in the content library in vCenter
 
-#### test 1
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas7.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas8.png)
+
+## test 1
