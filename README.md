@@ -76,8 +76,28 @@ arcas --env vsphere --file vsphere.json --avi_configuration --avi_wcp_configurat
 
 ### Please wait for about ~10-20 min for the WCp enablement to take place
 The error can be ignored!
+
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas25.png)
 
+## Outcome in WCP enable vCenter
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas26.png)
+
+## Outcome in vCenter with AVI service engines deployed
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas27.png)
+
+## Outcome loggin onto supervisor cluster
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas28.png)
+
+## Deploying a namespace (a user needs to be added in the vCenter GUI!) 
+
+```
+arcas --env vsphere --file vsphere.json --create_supervisor_namespace
+```
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas29.png)
 
 
 
