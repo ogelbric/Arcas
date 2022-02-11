@@ -114,6 +114,118 @@ arcas --env vsphere --file vsphere.json --create_supervisor_namespace
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas29.png)
 
 
+#### jason file example
+
+```
+root@arcas [ /opt/vmware/arcas/src ]# cat vsphere.json
+{
+    "env-spec": {
+        "vcenter-details": {
+            "vcenter-address": "192.168.1.50",
+            "vcenter-sso-user": "administrator@vsphere.local",
+            "vcenter-sso-password-base64": "Vk13YXJlMSE=",
+            "vcenter-datacenter": "avi-Datacenter",
+            "vcenter-cluster": "avi-Cluster",
+            "vcenter-datastore": "vsanDatastore",
+            "content-library-name": "avi",
+            "avi-ova-name": "controller-21.1.2-9124"
+        },
+        "env-type": "tkgs",
+        "marketplace-spec": {
+            "refresh-token": ""
+        },
+        "saas-endpoints": {
+            "tmc-details": {
+                "tmc-availability": "false",
+                "tmc-refresh-token": "",
+                "tmc-supervisor-cluster-name": ""
+            }
+        },
+        "infra-components": {
+            "dns-servers-ip": "192.168.1.7",
+            "search_domains": "lab.local",
+            "ntp-servers": "10.128.152.81"
+        }
+    },
+    "tkgs-component-spec": {
+        "control-plane-size": "MEDIUM",
+        "avi-mgmt-network": {
+            "avi-mgmt-network-name": "DVPG-Management Network",
+            "avi-mgmt-network-gateway-cidr": "192.168.1.1/24",
+            "avi-mgmt-service-ip-startrange": "192.168.1.60",
+            "avi-mgmt-service-ip-endrange": "192.168.1.70"
+        },
+        "avi-components": {
+            "avi-password-base64": "Vk13YXJlMSE=",
+            "avi-backup-passphrase-base64": "Vk13YXJlMSE=",
+            "avi-controller01-ip": "192.168.1.40",
+            "avi-controller01-fqdn": "avi.lab.local"
+        },
+        "tkgs-vip-network": {
+            "tkgs-vip-network-name": "DVPG-Frontend Network",
+            "tkgs-vip-network-gateway-cidr": "192.168.4.1/24",
+            "tkgs-vip-ip-startrange": "192.168.4.70",
+            "tkgs-vip-ip-endrange": "192.168.4.100"
+        },
+        "tkgs-mgmt-network-spec": {
+            "tkgs-mgmt-network-name": "DVPG-Management Network",
+            "tkgs-mgmt-network-gateway-cidr": "192.168.1.1/24",
+            "tkgs-mgmt-network-starting-ip": "192.168.1.80",
+            "tkgs-mgmt-network-dns-server": "192.168.1.7",
+            "tkgs-mgmt-network-search-domains": "lab.local",
+            "tkgs-mgmt-network-ntp": "10.128.152.81"
+        },
+        "tkgs-primary-workload-network": {
+            "tkgs-primary-workload-network-name": "DVPG-Workload Network",
+            "tkgs-primary-workload-network-gateway-cidr": "192.168.5.1/24",
+            "tkgs-primary-workload-network-start-range": "192.168.5.70",
+            "tkgs-primary-workload-network-end-range": "192.168.5.100",
+            "tkgs-workload-dns-server": "192.168.1.7",
+            "tkgs-workload-service-cidr": "10.96.0.0/22"
+        },
+        "tkgs-storage-policy-spec": {
+            "master-storage-policy": "vSAN Default Storage Policy",
+            "ephemeral-storage-policy": "vSAN Default Storage Policy",
+            "image-storage-policy": "vSAN Default Storage Policy"
+        },
+        "tkgs-vsphere-namespace-spec": {
+            "tkgs-vsphere-namespace-name": "namespace1000",
+            "tkgs-vsphere-namespace-description": "",
+            "tkgs-vsphere-namespace-workload-network": "DVPG-Workload Network",
+            "tkgs-vsphere-namespace-content-library": "avi",
+            "tkgs-vsphere-namespace-vm-classes": [
+                "best-effort-small",
+                "best-effort-2xlarge",
+                "best-effort-large",
+                "best-effort-xsmall",
+                "best-effort-medium",
+                "best-effort-xlarge"
+            ],
+            "tkgs-vsphere-namespace-resource-spec": {},
+            "tkgs-vsphere-namespace-storage-spec": [
+                {
+                    "storage-policy": "vSAN Default Storage Policy"
+                }
+            ],
+            "tkgs-vsphere-workload-cluster-spec": {
+                "tkgs-vsphere-namespace-name": "namespace1000",
+                "tkgs-vsphere-workload-cluster-name": "tkg-cluster",
+                "allowed-storage-classes": [
+                    "vSAN Default Storage Policy"
+                ],
+                "default-storage-class": "vSAN Default Storage Policy",
+                "node-storage-class": "vSAN Default Storage Policy",
+                "service-cidr-blocks": "192.168.0.0/16",
+                "pod-cidr-blocks": "10.96.0.0/12",
+                "control-plane-vm-class": "best-effort-medium",
+                "worker-vm-class": "best-effort-medium",
+                "worker-node-count": "3",
+                "enable-control-planne-ha": "false"
+            }
+        }
+    }
+}
+```
 
 
 
