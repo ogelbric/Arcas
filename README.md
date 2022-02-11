@@ -32,7 +32,8 @@ Power on once deployed
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas8.png)
 
-## Use a broswser and connet to port 8888 on the Tanzu Service Installer (in my case http://192.168.1.39:8888)
+## Use broswser and connect to port 8888 on the Tanzu Service Installer 
+(In my case http://192.168.1.39:8888)
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas9.png)
 
