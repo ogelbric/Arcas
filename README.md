@@ -67,6 +67,11 @@ Power on once deployed
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas23.png)
 
+```
+cd /opt/vmware/arcas/src
+arcas --env vsphere --file vsphere.json --avi_configuration --avi_wcp_configuration --enable_wcp
+```
+
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas24.png)
 
 ### Please wait for about ~10-20 min for the WCp enablement to take place
