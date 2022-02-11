@@ -21,6 +21,8 @@ need URL here...
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas5.png)
 
 Power on once deployed
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas10.png)
   
 ## DNS set up
 
