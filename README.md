@@ -6,11 +6,11 @@ This write up focuses at a TKGs install with AVI (NSX advanced loadbalancer)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas1.png)
 
 
-## Download the Service Installer OVA
+## Download the Tanzu Service Installer OVA
 
 need URL here... 
 
-## Deploy the Service Installer OVA 
+## Deploy the Tanzu Service Installer OVA 
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas2.png)
 
@@ -32,4 +32,9 @@ Power on once deployed
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas8.png)
 
-## test 1
+## Use a broswser and connet to port 8888 on the Tanzu Service Installer (in my case http://192.168.1.39:8888)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas9.png)
+
+
+
