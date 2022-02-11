@@ -13,7 +13,10 @@ https://github.com/ogelbric/Arcas/blob/main/Arcasdeploymentspreadsheet.xlsx
 
 ## Download the Tanzu Service Installer OVA
 
-need URL here... 
+Send e-mail or ogelbrich@vmware.com to get access
+
+https://www.dropbox.com/sh/xxx/AADU_xxxxxxxxxxztl7ESHa?dl=0
+
 
 ## Deploy the Tanzu Service Installer OVA 
 
