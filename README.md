@@ -86,8 +86,10 @@ arcas --env vsphere --file vsphere.json --avi_configuration --avi_wcp_configurat
 The error can be ignored!
 If you have this error you may have to pull the kubectl-vsphere binary from the API endpoint
 ```
-wget --no-check-certificate https://192.168.1.61/wcp/plugin/linux-amd64/vsphere-plugin.zip
+wget --no-check-certificate https://192.168.4.71/wcp/plugin/linux-amd64/vsphere-plugin.zip
+
 ```
+And unzip it and place it in /usr/local/bin
 
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas25.png)
