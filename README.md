@@ -84,6 +84,11 @@ arcas --env vsphere --file vsphere.json --avi_configuration --avi_wcp_configurat
 
 ### Please wait for about ~10-20 min for the WCp enablement to take place
 The error can be ignored!
+If you have this error you may have to pull the kubectl-vsphere binary from the API endpoint
+```
+wget --no-check-certificate https://192.168.1.61/wcp/plugin/linux-amd64/vsphere-plugin.zip
+```
+
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas25.png)
 
