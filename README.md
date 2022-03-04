@@ -125,7 +125,7 @@ arcas --env vsphere --file vsphere.json --create_supervisor_namespace
 ![Version](https://github.com/ogelbric/Arcas/blob/main/Arcas29.png)
 
 
-#### jason file example
+#### TKGs json file example
 
 ```
 root@arcas [ /opt/vmware/arcas/src ]# cat vsphere.json
@@ -286,6 +286,194 @@ DNS
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm16.png)
 
+### TKGm json file example
 
+```
+{
+    "env-spec": {
+        "vcenter-details": {
+            "vcenter-address": "192.168.1.50",
+            "vcenter-sso-user": "administrator@vsphere.local",
+            "vcenter-sso-password-base64": "Vk13YXJlMSE=",
+            "vcenter-datacenter": "avi-Datacenter",
+            "vcenter-cluster": "avi-Cluster",
+            "vcenter-datastore": "vsanDatastore",
+            "content-library-name": "avi",
+            "avi-ova-name": "controller-21.1.2-9124",
+            "resource-pool-name": ""
+        },
+        "env-type": "tkgm",
+        "marketplace-spec": {
+            "refresh-token": ""
+        },
+        "custom-repository-spec": {
+            "tkg_custom_image_repository": "",
+            "tkg_custom_image_repository_public_ca_cert": ""
+        },
+        "saas-endpoints": {
+            "tmc-details": {
+                "tmc-availability": "false",
+                "tmc-refresh-token": ""
+            },
+            "tanzu-observability-details": {
+                "tanzu-observability-availability": "false",
+                "tanzu-observability-url": "",
+                "tanzu-observability-refresh-token": ""
+            }
+        },
+        "infra-components": {
+            "dns-servers-ip": "192.168.1.7",
+            "ntp-servers": "10.128.152.81",
+            "search_domains": "lab.local"
+        },
+        "proxy-spec": {
+            "arcas-vm": {
+                "enable-proxy": "false",
+                "http-proxy": "",
+                "https-proxy": "",
+                "no-proxy": ""
+            },
+            "tkg-mgmt": {
+                "enable-proxy": "false",
+                "http-proxy": "",
+                "https-proxy": "",
+                "no-proxy": ""
+            },
+            "tkg-sharedservice": {
+                "enable-proxy": "false",
+                "http-proxy": "",
+                "https-proxy": "",
+                "no-proxy": ""
+            },
+            "tkg-workload": {
+                "enable-proxy": "false",
+                "http-proxy": "",
+                "https-proxy": "",
+                "no-proxy": ""
+            }
+        }
+    },
+    "tkg-component-spec": {
+        "avi-mgmt-network": {
+            "avi-mgmt-network-name": "DVPG-Management Network",
+            "avi-mgmt-network-gateway-cidr": "192.168.1.1/24",
+            "avi-mgmt-service-ip-startrange": "192.168.1.60",
+            "avi-mgmt-service-ip-endrange": "192.168.1.70"
+        },
+        "tkg-cluster-vip-network": {
+            "tkg-cluster-vip-network-name": "DVPG-Frontend Network",
+            "tkg-cluster-vip-network-gateway-cidr": "192.168.4.1/24",
+            "tkg-cluster-vip-ip-startrange": "192.168.4.70",
+            "tkg-cluster-vip-ip-endrange": "192.168.4.100"
+        },
+        "avi-components": {
+            "avi-password-base64": "Vk13YXJlMSE=",
+            "avi-backup-passphrase-base64": "Vk13YXJlMSE=",
+            "avi-controller01-ip": "192.168.1.40",
+            "avi-controller01-fqdn": "avi.lab.local"
+        },
+        "tkg-mgmt-components": {
+            "tkg-mgmt-network-name": "DVPG-Management Network",
+            "tkg-mgmt-gateway-cidr": "192.168.1.1/24",
+            "tkg-mgmt-cluster-name": "tkgmgt1",
+            "tkg-mgmt-size": "medium",
+            "tkg-mgmt-deployment-type": "dev",
+            "tkg-mgmt-cluster-cidr": "100.96.0.0/11",
+            "tkg-mgmt-service-cidr": "100.64.0.0/13",
+            "tkg-mgmt-base-os": "photon",
+            "tkg-sharedservice-cluster-name": "sharedtkg1",
+            "tkg-sharedservice-size": "large",
+            "tkg-sharedservice-deployment-type": "dev",
+            "tkg-sharedservice-worker-machine-count": "1",
+            "tkg-sharedservice-cluster-cidr": "100.96.0.0/11",
+            "tkg-sharedservice-service-cidr": "100.64.0.0/13",
+            "tkg-sharedservice-base-os": "photon",
+            "tkg-sharedservice-kube-version": "v1.21.2"
+        }
+    },
+    "tkg-mgmt-data-network": {
+        "tkg-mgmt-data-network-name": "DVPG-Management Network",
+        "tkg-mgmt-data-network-gateway-cidr": "192.168.1.1/24",
+        "tkg-mgmt-avi-service-ip-startrange": "192.168.1.80",
+        "tkg-mgmt-avi-service-ip-endrange": "192.168.1.100"
+    },
+    "tkg-workload-data-network": {
+        "tkg-workload-data-network-name": "DVPG-Workload Network",
+        "tkg-workload-data-network-gateway-cidr": "192.168.5.1/24",
+        "tkg-workload-avi-service-ip-startrange": "192.168.5.70",
+        "tkg-workload-avi-service-ip-endRange": "192.168.5.100"
+    },
+    "tkg-workload-components": {
+        "tkg-workload-network-name": "DVPG-Workload Network",
+        "tkg-workload-gateway-cidr": "192.168.5.1/24",
+        "tkg-workload-cluster-name": "worktkg1",
+        "tkg-workload-size": "medium",
+        "tkg-workload-deployment-type": "dev",
+        "tkg-workload-worker-machine-count": "1",
+        "tkg-workload-cluster-cidr": "100.96.0.0/11",
+        "tkg-workload-service-cidr": "100.64.0.0/13",
+        "tkg-workload-base-os": "photon",
+        "tkg-workload-kube-version": "v1.21.2",
+        "tkg-workload-tsm-integration": "false",
+        "namespace-exclusions": {
+            "exact-name": "",
+            "starts-with": ""
+        }
+    },
+    "harbor-spec": {
+        "enable-harbor-extension": "true",
+        "harbor-fqdn": "harbor.lab.local",
+        "harbor-password-base64": "Vk13YXJlMSE=",
+        "harbor-cert-path": "",
+        "harbor-certkey-path": ""
+    },
+    "tanzu-extensions": {
+        "enable-extensions": "false",
+        "tkg-clusters_name": "",
+        "logging": {
+            "syslog_endpoint": {
+                "enable_syslog_endpoint": "false",
+                "syslog_endpoint_address": "",
+                "syslog_endpoint_port": "",
+                "syslog_endpoint_mode": "",
+                "syslog_endpoint_format": ""
+            },
+            "http_endpoint": {
+                "enable_http_endpoint": "false",
+                "http_endpoint_address": "",
+                "http_endpoint_port": "",
+                "http_endpoint_uri": "",
+                "http_endpoint_header_key_value": ""
+            },
+            "elastic_search_endpoint": {
+                "enable_elastic_search_endpoint": "false",
+                "elastic_search_endpoint_address": "",
+                "elastic_search_endpoint_port": ""
+            },
+            "kafka_endpoint": {
+                "enable_kafka_endpoint": "false",
+                "kafka_broker_service_name": "",
+                "kafka_topic_name": ""
+            },
+            "splunk_endpoint": {
+                "enable_splunk_endpoint": "false",
+                "splunk_endpoint_address": "",
+                "splunk_endpoint_port": "",
+                "splunk_endpoint_token": ""
+            }
+        },
+        "monitoring": {
+            "enable-logging-extension": "false",
+            "prometheus-fqdn": "",
+            "prometheus-cert-path": "",
+            "prometheus-certkey-path": "",
+            "grafana-fqdn": "",
+            "grafana-cert-path": "",
+            "grafana-certkey-path": "",
+            "grafana-password-base64": ""
+        }
+    }
+}
+```
 
 
