@@ -246,6 +246,12 @@ And here are the input screens
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm1.png)
 
+![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm2.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm3.png)
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm4.png)
+
 
 
 
