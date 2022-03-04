@@ -241,6 +241,10 @@ root@arcas [ /opt/vmware/arcas/src ]# cat vsphere.json
 ## TKGm
 This write up focuses at a TKGm install with AVI (NSX advanced loadbalancer)
 
+Arcas is deployed(use previous section for that)
+And here are the input screens
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm1.png)
 
 
 
