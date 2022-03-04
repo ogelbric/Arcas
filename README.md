@@ -1,5 +1,6 @@
 # Service Installer for VMware Tanzu (Project Arcas)
 This write up focuses at a TKGs install with AVI (NSX advanced loadbalancer)
+Further down is the TKGm install
 
 A nice network spread sheet is located here 
 
