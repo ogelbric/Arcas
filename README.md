@@ -272,7 +272,7 @@ And here are the input screens
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm14.png)
 
-Commands for the below output and addin the harbor IP to DNS
+Commands for the below output and adding the harbor IP to DNS
 
 ```
 kubectl config get-contexts
