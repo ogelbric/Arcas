@@ -272,8 +272,19 @@ And here are the input screens
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm14.png)
 
+Commands for the below output and addin the harbor IP to DNS
 
+```
+kubectl config get-contexts
+kubectl config use-context sharedtkg1-admin@sharedtkg1
+kubectl get svc -A
+kubectl get httpproxy -A
+   ```
+![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm15.png)
 
+DNS
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm16.png)
 
 
 
