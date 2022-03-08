@@ -272,36 +272,34 @@ And here are the input screens
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm14.png)
 
-Deploy from JSON file:
+###Deploy from JSON file:
 ```
 arcas --env vsphere --file /opt/vmware/arcas/src/vsphere.json --avi_configuration --tkg_mgmt_configuration
 ```
 
-Follow in the log:
+###Follow in the log:
 ```
 journalctl -u arcas.service --follow
 ```
 
-Deploy the rest of the clusters:
+###Deploy the rest of the clusters:
 ```
 arcas --env vsphere --file /opt/vmware/arcas/src/vsphere.json --avi_configuration --tkg_mgmt_configuration --shared_service_configuration --workload_preconfig --workload_deploy
 ```
+
 ![image](https://user-images.githubusercontent.com/16323391/157287577-88ad4633-a8b9-422a-ba38-1f2c09280bb0.png)
 
-
-
-
-Commands for the below output and adding the harbor IP to DNS
-
+###Commands for the below output and adding the harbor IP to DNS
 ```
 kubectl config get-contexts
 kubectl config use-context sharedtkg1-admin@sharedtkg1
 kubectl get svc -A
 kubectl get httpproxy -A
-   ```
+```
+
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm15.png)
 
-DNS
+###DNS
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm16.png)
 
