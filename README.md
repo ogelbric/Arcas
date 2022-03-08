@@ -272,6 +272,16 @@ And here are the input screens
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/tkgm14.png)
 
+```
+arcas --env vsphere --file /opt/vmware/arcas/src/vsphere.json --avi_configuration --tkg_mgmt_configuration
+
+journalctl -u arcas.service --follow
+arcas --env vsphere --file /opt/vmware/arcas/src/vsphere.json --avi_configuration --tkg_mgmt_configuration --shared_service_configuration --workload_preconfig --workload_deploy
+![image](https://user-images.githubusercontent.com/16323391/157287577-88ad4633-a8b9-422a-ba38-1f2c09280bb0.png)
+
+```
+
+
 Commands for the below output and adding the harbor IP to DNS
 
 ```
