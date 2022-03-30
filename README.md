@@ -2,6 +2,32 @@
 
 ## TKGm
 
+Network Setup:
+
+```
+Networks .3 .5 .7
+.3 = Management
+	vCenter 3.50
+	Arcas79 3.39
+	Avi 3.40
+	
+	Avi mgt Start 3.60-69
+	TKGm mgt start 3.70-89
+	TKGm work 3.90-99
+	
+.5 = Frontend
+	AVI .5-60-89
+	
+.7 = Workload
+
+Gateway = "192.168.3.1"
+Gateway = "192.168.5.1"
+Gateway = "192.168.7.1"
+
+DNS = "10.197.79.7"
+NTP = "10.128.152.81"
+
+```
 Yaml file: vsphere-dvs-tkgm.json
 
 ```
