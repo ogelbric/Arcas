@@ -31,6 +31,18 @@ NTP = "10.128.152.81"
 OVA Deploy
 
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-1.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-2.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-3.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-4.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-5.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-6.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-7.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-8.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-9.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-10.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-11.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-12.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-13.png)
 
 
 
