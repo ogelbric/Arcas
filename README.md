@@ -28,6 +28,12 @@ DNS = "10.197.79.7"
 NTP = "10.128.152.81"
 
 ```
+OVA Deploy
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-1.png)
+
+
+
 Yaml file: vsphere-dvs-tkgm.json
 
 ```
