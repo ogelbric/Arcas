@@ -44,6 +44,27 @@ OVA Deploy
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-12.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-13.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-14.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-141.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-15.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-16.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-17.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-18.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-19.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-20.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-21.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-22.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-23.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-24.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-25.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-26.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-27.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-28.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-29.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-30.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-31.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-32.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-33.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-34.png)
 
 
 
@@ -251,6 +272,11 @@ Yaml file: vsphere-dvs-tkgm.json
     }
 }
 ```
+
+Log onto a worker node (key is in root .ssh): 
+
+ssh capv@<worker_node_ip> 
+
 
 
 
