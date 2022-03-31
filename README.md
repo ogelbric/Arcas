@@ -62,13 +62,27 @@ OVA Deploy
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-29.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-30.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-31.png)
+
+Execute on the Arcas VM: 
+
+```
+arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgm.json --avi_configuration --tkg_mgmt_configuration --verbose
+kubectl config use-context mgtcluster-admin@mgtcluste
+
+arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgm.json --avi_configuration --tkg_mgmt_configuration --shared_service_configuration
+
+arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgm.json --avi_configuration --tkg_mgmt_configuration --shared_service_configuration --workload_preconfig --workload_deploy
+```
+
+Results for each line above: 
+
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-32.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-33.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-34.png)
 
 
 
-Yaml file: vsphere-dvs-tkgm.json
+YAML file: vsphere-dvs-tkgm.json
 
 ```
 {
