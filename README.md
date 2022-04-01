@@ -294,7 +294,37 @@ ssh capv@<worker_node_ip>
 
 
 
-### Arcas 1.1 TGS WCP enablement
+### Arcas 1.1 TKGs WCP enablement
+## TKGs
+
+Network Setup:
+```
+Networks .3 .5 .7
+.3 = Management
+	vCenter 3.50
+	Arcas79 3.39
+	Avi.lab.local 3.40
+	
+	Avi mgt Start 3.60-69
+	
+	WCP mgt start 3.70-79
+	
+.5 = Frontend
+	AVI VIP .5-60-89
+	
+.7 = Workload
+
+	WCP workload - .7.100-119
+	
+Gateway = "192.168.3.1"
+Gateway = "192.168.5.1"
+Gateway = "192.168.7.1"
+
+DNS = "10.197.79.7"
+NTP = "10.128.152.81"
+```
+
+
 
 TKGs YAML file for WCP enablement: 
 ```
