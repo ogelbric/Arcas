@@ -408,6 +408,9 @@ Building the namespace (GUI):
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_22.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_231.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_24.png)
+
+There seems to be an issue with the Harbor enablement!
+
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_25.png)
 
 
