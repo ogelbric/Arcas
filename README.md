@@ -406,7 +406,7 @@ Building the namespace (GUI):
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_20.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_21.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_22.png)
-![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_23.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_231.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_24.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_25.png)
 
