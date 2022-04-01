@@ -346,6 +346,9 @@ cd  /opt/vmware/arcas/src
 arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgs-wcp.json  --avi_configuration --avi_wcp_configuration --enable_wcp
 
 ```
+Results:
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_14.png)
 
 
 TKGs YAML file for WCP enablement: 
