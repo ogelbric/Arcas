@@ -478,7 +478,139 @@ TKGs YAML file for WCP enablement:
 }
 ```
 
+TKGs YAML namespace and work load cluster enablement
 
+```
+cat  /opt/vmware/arcas/src/vsphere-dvs-tkgs-namespace.json 
+```
+TKGs YAML 2:
+```
+{
+    "envSpec": {
+        "envType": "tkgs-ns",
+        "vcenterDetails": {
+            "vcenterAddress": "192.168.3.50",
+            "vcenterSsoUser": "administrator@vsphere.local",
+            "vcenterSsoPasswordBase64": "Vk13YXJlMSE=",
+            "vcenterDatacenter": "avi-Datacenter",
+            "vcenterCluster": "avi-Cluster"
+        },
+        "saasEndpoints": {
+            "tmcDetails": {
+                "tmcAvailability": "false",
+                "tmcRefreshToken": "",
+                "tmcSupervisorClusterName": ""
+            },
+            "tanzuObservabilityDetails": {
+                "tanzuObservabilityAvailability": "false",
+                "tanzuObservabilityUrl": "",
+                "tanzuObservabilityRefreshToken": ""
+            }
+        }
+    },
+    "tkgsComponentSpec": {
+        "tkgsWorkloadNetwork": {
+            "tkgsWorkloadNetworkName": "workload1",
+            "tkgsWorkloadPortgroupName": "",
+            "tkgsWorkloadNetworkGatewayCidr": "",
+            "tkgsWorkloadNetworkStartRange": "",
+            "tkgsWorkloadNetworkEndRange": "",
+            "tkgsWorkloadServiceCidr": ""
+        },
+        "tkgsVsphereNamespaceSpec": {
+            "tkgsVsphereNamespaceName": "namespace1000",
+            "tkgsVsphereNamespaceDescription": "",
+            "tkgsVsphereNamespaceContentLibrary": "SubscribedAutomation-Lib",
+            "tkgsVsphereNamespaceVmClasses": [
+                "best-effort-medium",
+                "best-effort-large",
+                "best-effort-2xlarge",
+                "best-effort-small"
+            ],
+            "tkgsVsphereNamespaceResourceSpec": {},
+            "tkgsVsphereNamespaceStorageSpec": [
+                {
+                    "storagePolicy": "pacific-gold-storage-policy"
+                }
+            ],
+            "tkgsVsphereWorkloadClusterSpec": {
+                "tkgsVsphereNamespaceName": "namespace1000",
+                "tkgsVsphereWorkloadClusterName": "workloadcluster1",
+                "tkgsVsphereWorkloadClusterVersion": "v1.20.12+vmware.1-tkg.1.b9a42f3",
+                "allowedStorageClasses": [
+                    "pacific-gold-storage-policy"
+                ],
+                "defaultStorageClass": "pacific-gold-storage-policy",
+                "nodeStorageClass": "pacific-gold-storage-policy",
+                "serviceCidrBlocks": "10.96.0.0/12",
+                "podCidrBlocks": "192.168.0.0/16",
+                "controlPlaneVmClass": "best-effort-medium",
+                "workerVmClass": "best-effort-medium",
+                "workerNodeCount": "2",
+                "enableControlPlaneHa": "false",
+                "tkgWorkloadTsmIntegration": "false",
+                "namespaceExclusions": {
+                    "exactName": "",
+                    "startsWith": ""
+                }
+            }
+        }
+    },
+    "harborSpec": {
+        "enableHarborExtension": "true",
+        "harborFqdn": "harbor.lab.local",
+        "harborPasswordBase64": "Vk13YXJlMSE=",
+        "harborCertPath": "",
+        "harborCertKeyPath": ""
+    },
+    "tanzuExtensions": {
+        "enableExtensions": "false",
+        "tkgClustersName": "",
+        "logging": {
+            "syslogEndpoint": {
+                "enableSyslogEndpoint": "false",
+                "syslogEndpointAddress": "",
+                "syslogEndpointPort": "",
+                "syslogEndpointMode": "",
+                "syslogEndpointFormat": ""
+            },
+            "httpEndpoint": {
+                "enableHttpEndpoint": "false",
+                "httpEndpointAddress": "",
+                "httpEndpointPort": "",
+                "httpEndpointUri": "",
+                "httpEndpointHeaderKeyValue": ""
+            },
+            "elasticSearchEndpoint": {
+                "enableElasticSearchEndpoint": "false",
+                "elasticSearchEndpointAddress": "",
+                "elasticSearchEndpointPort": ""
+            },
+            "kafkaEndpoint": {
+                "enableKafkaEndpoint": "false",
+                "kafkaBrokerServiceName": "",
+                "kafkaTopicName": ""
+            },
+            "splunkEndpoint": {
+                "enableSplunkEndpoint": "false",
+                "splunkEndpointAddress": "",
+                "splunkEndpointPort": "",
+                "splunkEndpointToken": ""
+            }
+        },
+        "monitoring": {
+            "enableLoggingExtension": "false",
+            "prometheusFqdn": "",
+            "prometheusCertPath": "",
+            "prometheusCertKeyPath": "",
+            "grafanaFqdn": "",
+            "grafanaCertPath": "",
+            "grafanaCertKeyPath": "",
+            "grafanaPasswordBase64": ""
+        }
+    }
+}
+```
 
 
 
