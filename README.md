@@ -358,9 +358,12 @@ wget --no-check-certificate https://192.168.5.62/wcp/plugin/linux-amd64/vsphere-
 unzip vsphere-plugin.zip
 ```
 
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_15.png)
+
 Log onto supervisor cluster:
 ```
 kubectl-vsphere login --vsphere-username administrator@vsphere.local --server=https://192.168.5.62 --insecure-skip-tls-verify
+
 ```
 
 KUBECTL_VSPHERE_PASSWORD environment variable is not set. Please enter the password below
@@ -375,17 +378,47 @@ logging in again later, or contact your cluster administrator.
 
 To change context, use `kubectl config use-context <workload name>`
 root@arcas79 [ /usr/local ]# 
+
 ```
 kubectl config use-context 192.168.5.62
+
 ```
 Switched to context "192.168.5.62".
 ```
 kubectl get nodes
+
+```
+Output:
+
 ```
 NAME                               STATUS   ROLES                  AGE    VERSION
 42133bfc2b5aaf343a32dbce9200c435   Ready    control-plane,master   178m   v1.21.0+vmware.1-wcp
 4213a81423b462db51d5f4a4b406d255   Ready    control-plane,master   178m   v1.21.0+vmware.1-wcp
 4213ac7fd275d92df89b6cd2eed0e007   Ready    control-plane,master   3h2m   v1.21.0+vmware.1-wcp
+```
+
+Building the namespace (GUI): 
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_16.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_17.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_18.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_19.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_20.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_21.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_22.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_23.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_24.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_25.png)
+
+
+
+Building the namespace (CMD line): 
+
+
+```
+arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgs-namespace.json --create_supervisor_namespace --create_workload_cluster --deploy_extensions
+
+```
 
 
 
