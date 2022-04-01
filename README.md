@@ -420,6 +420,38 @@ arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgs-namespace.json
 
 ```
 
+Picture <----
+
+Loggin onto guest workload cluster: 
+```
+kubectl-vsphere login --vsphere-username administrator@vsphere.local --server=https://192.168.5.62 --tanzu-kubernetes-cluster-namespace namespace1000 --tanzu-kubernetes-cluster-name workloadcluster1 --insecure-skip-tls-verify
+
+```
+
+```
+Logged in successfully.
+
+You have access to the following contexts:
+   192.168.5.62
+   namespace1000
+   workloadcluster1
+
+If the context you wish to use is not in this list, you may need to try
+logging in again later, or contact your cluster administrator.
+
+To change context, use `kubectl config use-context <workload name>`
+
+root@arcas79 [ /usr/local ]# kubectl config use-context workloadcluster1    
+Switched to context "workloadcluster1".
+root@arcas79 [ /usr/local ]# kubectl get nodes
+NAME                                            STATUS   ROLES                  AGE     VERSION
+workloadcluster1-control-plane-v7f4x            Ready    control-plane,master   10m     v1.20.12+vmware.1
+workloadcluster1-workers-ct6fp-bfb88d59-45bcp   Ready    <none>                 6m22s   v1.20.12+vmware.1
+workloadcluster1-workers-ct6fp-bfb88d59-lk2qr   Ready    <none>                 6m28s   v1.20.12+vmware.1
+	
+```
+
+	
 
 
 
