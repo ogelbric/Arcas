@@ -351,6 +351,45 @@ Results:
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_14.png)
 
 
+Get the kubectl-vsphere binaries from API endpoint:
+```
+cd /usr/local
+wget --no-check-certificate https://192.168.5.62/wcp/plugin/linux-amd64/vsphere-plugin.zip
+unzip vsphere-plugin.zip
+```
+
+Log onto supervisor cluster:
+```
+kubectl-vsphere login --vsphere-username administrator@vsphere.local --server=https://192.168.5.62 --insecure-skip-tls-verify
+```
+
+KUBECTL_VSPHERE_PASSWORD environment variable is not set. Please enter the password below
+Password: 
+Logged in successfully.
+
+You have access to the following contexts:
+   192.168.5.62
+
+If the context you wish to use is not in this list, you may need to try
+logging in again later, or contact your cluster administrator.
+
+To change context, use `kubectl config use-context <workload name>`
+root@arcas79 [ /usr/local ]# 
+```
+kubectl config use-context 192.168.5.62
+```
+Switched to context "192.168.5.62".
+```
+kubectl get nodes
+```
+NAME                               STATUS   ROLES                  AGE    VERSION
+42133bfc2b5aaf343a32dbce9200c435   Ready    control-plane,master   178m   v1.21.0+vmware.1-wcp
+4213a81423b462db51d5f4a4b406d255   Ready    control-plane,master   178m   v1.21.0+vmware.1-wcp
+4213ac7fd275d92df89b6cd2eed0e007   Ready    control-plane,master   3h2m   v1.21.0+vmware.1-wcp
+
+
+
+
 TKGs YAML file for WCP enablement: 
 ```
 {
