@@ -325,6 +325,28 @@ NTP = "10.128.152.81"
 ```
 
 
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_1.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_2.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_3.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_4.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_5.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_6.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_7.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_8.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_9.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_10.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_11.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_12.png)
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_13.png)
+
+WCP enablement:
+```
+cd  /opt/vmware/arcas/src
+
+arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgs-wcp.json  --avi_configuration --avi_wcp_configuration --enable_wcp
+
+```
+
 
 TKGs YAML file for WCP enablement: 
 ```
