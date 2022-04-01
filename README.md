@@ -420,9 +420,13 @@ arcas --env vsphere --file /opt/vmware/arcas/src/vsphere-dvs-tkgs-namespace.json
 
 ```
 
-Picture <----
+Result:
+
+![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11_TKGs_26.png)
+
 
 Loggin onto guest workload cluster: 
+
 ```
 kubectl-vsphere login --vsphere-username administrator@vsphere.local --server=https://192.168.5.62 --tanzu-kubernetes-cluster-namespace namespace1000 --tanzu-kubernetes-cluster-name workloadcluster1 --insecure-skip-tls-verify
 
