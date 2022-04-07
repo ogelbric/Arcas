@@ -233,7 +233,7 @@ YAML file: vsphere-dvs-tkgm.json
     },
     "harborSpec": {
         "enableHarborExtension": "true",
-        "harborFqdn": "harbor",
+        "harborFqdn": "harbor.lab.local",
         "harborPasswordBase64": "Vk13YXJlMSE=",
         "harborCertPath": "",
         "harborCertKeyPath": ""
