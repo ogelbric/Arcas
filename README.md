@@ -59,6 +59,7 @@ OVA Deploy
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-26.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-27.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-28.png)
+make sure this is harbor.lab.local (my picture is missing the doamin on the hostname!)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-29.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-30.png)
 ![Version](https://github.com/ogelbric/Arcas/blob/main/arcas11-31.png)
